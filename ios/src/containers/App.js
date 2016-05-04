@@ -7,25 +7,25 @@ export default class App extends Component {
 		const Component = route.component;
 		return (
 			<Component {...route.props} navigator={navigator} route={route} />
-		);
+			);
 	}
 
 	render () {
 		return (
 			<Navigator
-				initialRoute={{
-					component: HomeList,
-				}}
-				style={styles.container}
-				renderScene={this.renderScene}
+			initialRoute={{
+				component: HomeList,
+			}}
+			style={styles.container}
+			renderScene={this.renderScene}
 			/>
-		);
+			);
 	}
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-  }
+	container: {
+		flex: 1,
+		backgroundColor: 'white',
+	}
 });

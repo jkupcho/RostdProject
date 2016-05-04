@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, {
+ import React, {
   AppRegistry,
   Component,
   StyleSheet,
