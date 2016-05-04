@@ -1,11 +1,11 @@
 import React, { Text, TouchableHighlight, StyleSheet } from 'react-native';
 
 export default ({title, navigate}) => {
-	return (
-		<TouchableHighlight onPress={navigate}>
-			<Text style={styles.container}>{title}</Text>
-		</TouchableHighlight>
-	);
+  return (
+    <TouchableHighlight onPress={navigate}>
+      <Text style={styles.container}>{title}</Text>
+    </TouchableHighlight>
+  );
 }
 
 const styles = StyleSheet.create({
