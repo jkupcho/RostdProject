@@ -21,9 +21,9 @@ export default class HomeList extends Component {
   render() {
     return (
       <View style={styles.container}>
-      <ListView 
-        dataSource={this.state.dataSource}
-        renderRow={(rowData) => <HomeListViewItem navigate={(event) => console.log(event)} {...rowData} />} />
+        <ListView 
+          dataSource={this.state.dataSource}
+          renderRow={(rowData) => <HomeListViewItem navigate={(event) => console.log(event)} {...rowData} />} />
       </View>
       );
   }
